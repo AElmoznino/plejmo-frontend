@@ -1,57 +1,89 @@
 [
 	{
-		"picture": "http://placehold.it/32x32",
-		"title": "title",
-		"rating": 4.0601,
+		"picture": "13hours",
+		"url": "https://www.plejmo.com/sv/film/15778/13-hours-the-secret-soldiers-of-benghazi/",
+		"title": "13 Hours",
+		"rating": 4,
 		"genre": "action",
 		"price": 39
 	},
 	{
-		"picture": "http://placehold.it/32x32",
-		"title": "title",
-		"rating": 1.5688,
+		"picture": "deadpool",
+		"url": "https://www.plejmo.com/sv/film/15584/deadpool/",
+		"title": "Deadpool",
+		"rating": 4,
 		"genre": "action",
 		"price": 39
 	},
 	{
-		"picture": "http://placehold.it/32x32",
-		"title": "title",
-		"rating": 3.9955,
+		"picture": "pointbreak",
+		"url": "https://www.plejmo.com/sv/film/15545/point-break/",
+		"title": "Point Break",
+		"rating": 3,
 		"genre": "action",
 		"price": 39
 	},
 	{
-		"picture": "http://placehold.it/32x32",
-		"title": "title",
-		"rating": 4.158,
+		"picture": "newcomer",
+		"url": "https://www.plejmo.com/sv/film/15790/newcomer/",
+		"title": "Newcomer",
+		"rating": 3,
 		"genre": "action",
 		"price": 39
 	},
 	{
-		"picture": "http://placehold.it/32x32",
-		"title": "title",
-		"rating": 0.5677,
+		"picture": "nowyouseeme",
+		"url": "https://www.plejmo.com/sv/film/12682/now-you-see-me/",
+		"title": "Now You See Me",
+		"rating": 3.5,
 		"genre": "action",
 		"price": 39
 	},
 	{
-		"picture": "http://placehold.it/32x32",
-		"title": "title",
-		"rating": 3.375,
+		"picture": "scorchtrials",
+		"url": "https://www.plejmo.com/sv/film/15272/maze-runner-the-scorch-trials/",
+		"title": "Scorch Trials",
+		"rating": 3.5,
 		"genre": "action",
 		"price": 39
 	},
 	{
-		"picture": "http://placehold.it/32x32",
-		"title": "title",
-		"rating": 2.4761,
+		"picture": "jurassicworld",
+		"url": "https://www.plejmo.com/sv/film/15023/jurassic-world/",
+		"title": "Jurassic World",
+		"rating": 3,
 		"genre": "action",
 		"price": 39
 	},
 	{
-		"picture": "http://placehold.it/32x32",
+		"picture": "transporter",
+		"url": "https://www.plejmo.com/sv/film/15288/the-transporter-refueled/",
+		"title": "Transporter",
+		"rating": 3,
+		"genre": "action",
+		"price": 39
+	},
+	{
+		"picture": "insurgent",
+		"url": "https://www.plejmo.com/sv/film/15033/insurgent/",
+		"title": "Insurgent",
+		"rating": 3.5,
+		"genre": "action",
+		"price": 39
+	},
+	{
+		"picture": "bourneidentity",
+		"url": "https://www.plejmo.com/sv/film/5090/the-bourne-identity/",
+		"title": "Bourne Identity",
+		"rating": 4,
+		"genre": "action",
+		"price": 29
+	},
+	{
+		"picture": "gladiator",
+		"url": "https://www.plejmo.com/sv/film/13744/gladiator/",
 		"title": "title",
-		"rating": 2.802,
+		"rating": 4,
 		"genre": "action",
 		"price": 39
 	}
