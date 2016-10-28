@@ -30,9 +30,14 @@ class MoviesContainer extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<MoviesList movies={this.state} />
-			</div>
+				<div className="row">
+					<div className="col-xs-10 col-xs-offset-1">
+						<h2>Populärast Action</h2>
+							<div className="row">
+								<MoviesList movies={this.state} />
+							</div>
+					</div>
+				</div>
 		)
 	}
 }

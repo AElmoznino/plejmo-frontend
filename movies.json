@@ -1,6 +1,6 @@
 [
 	{
-		"picture": "13hours",
+		"picture": "./images/13hours.jpg",
 		"url": "https://www.plejmo.com/sv/film/15778/13-hours-the-secret-soldiers-of-benghazi/",
 		"title": "13 Hours",
 		"rating": 4,
@@ -9,7 +9,7 @@
 		"id": 15778
 	},
 	{
-		"picture": "deadpool",
+		"picture": "./images/deadpool.jpg",
 		"url": "https://www.plejmo.com/sv/film/15584/deadpool/",
 		"title": "Deadpool",
 		"rating": 4,
@@ -18,7 +18,7 @@
 		"id": 15584
 	},
 	{
-		"picture": "pointbreak",
+		"picture": "./images/pointbreak.jpg",
 		"url": "https://www.plejmo.com/sv/film/15545/point-break/",
 		"title": "Point Break",
 		"rating": 3,
@@ -27,7 +27,7 @@
 		"id": 15545
 	},
 	{
-		"picture": "newcomer",
+		"picture": "./images/newcomer.jpg",
 		"url": "https://www.plejmo.com/sv/film/15790/newcomer/",
 		"title": "Newcomer",
 		"rating": 3,
@@ -36,7 +36,7 @@
 		"id": 15790
 	},
 	{
-		"picture": "nowyouseeme",
+		"picture": "./images/nowyouseeme.jpg",
 		"url": "https://www.plejmo.com/sv/film/12682/now-you-see-me/",
 		"title": "Now You See Me",
 		"rating": 3.5,
@@ -45,7 +45,7 @@
 		"id": 12682
 	},
 	{
-		"picture": "scorchtrials",
+		"picture": "./images/scorchtrials.jpg",
 		"url": "https://www.plejmo.com/sv/film/15272/maze-runner-the-scorch-trials/",
 		"title": "Scorch Trials",
 		"rating": 3.5,
@@ -54,7 +54,7 @@
 		"id": 15272
 	},
 	{
-		"picture": "jurassicworld",
+		"picture": "./images/jurassicworld.jpg",
 		"url": "https://www.plejmo.com/sv/film/15023/jurassic-world/",
 		"title": "Jurassic World",
 		"rating": 3,
@@ -63,7 +63,7 @@
 		"id": 15023
 	},
 	{
-		"picture": "transporter",
+		"picture": "./images/transporter.jpg",
 		"url": "https://www.plejmo.com/sv/film/15288/the-transporter-refueled/",
 		"title": "Transporter",
 		"rating": 3,
@@ -72,7 +72,7 @@
 		"id": 15288
 	},
 	{
-		"picture": "insurgent",
+		"picture": "./images/insurgent.jpg",
 		"url": "https://www.plejmo.com/sv/film/15033/insurgent/",
 		"title": "Insurgent",
 		"rating": 3.5,
@@ -81,7 +81,7 @@
 		"id": 15033
 	},
 	{
-		"picture": "bourneidentity",
+		"picture": "./images/bourneidentity.jpg",
 		"url": "https://www.plejmo.com/sv/film/5090/the-bourne-identity/",
 		"title": "Bourne Identity",
 		"rating": 4,
@@ -90,7 +90,7 @@
 		"id": 5090
 	},
 	{
-		"picture": "gladiator",
+		"picture": "./images/gladiator.jpg",
 		"url": "https://www.plejmo.com/sv/film/13744/gladiator/",
 		"title": "Gladiator",
 		"rating": 4,
