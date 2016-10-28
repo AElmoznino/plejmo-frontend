@@ -21,7 +21,7 @@ class MoviesContainer extends React.Component {
 			.then((res) => res.json())
 			.then((data) => {
 				console.log('data: ', data);
-				this.setState(data);
+				this.setState({results: data});
 			})
 			.catch(function(err) {
 				console.log('Fetch error: ', err);
