@@ -13,7 +13,8 @@
     "css-loader": "^0.25.0",
     "react-star-rating-component": "^1.2.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "name": "plejmo-frontend",
   "version": "1.0.0",
