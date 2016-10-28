@@ -80,7 +80,11 @@
 		_createClass(App, [{
 			key: 'render',
 			value: function render() {
-				return _react2.default.createElement(_movies2.default, null);
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(_movies2.default, null)
+				);
 			}
 		}]);
 
@@ -21484,6 +21488,9 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	// Import components
+
+
 	var MoviesContainer = function (_React$Component) {
 		_inherits(MoviesContainer, _React$Component);
 
@@ -21506,9 +21513,13 @@
 		}, {
 			key: 'requestMovies',
 			value: function requestMovies() {
-				fetch('./../../movies.json').then(function (res) {
-					console.log(res);
-					this.setState(res.data);
+				var _this2 = this;
+
+				fetch('../../movies.json').then(function (res) {
+					return res.json();
+				}).then(function (data) {
+					console.log('data: ', data);
+					_this2.setState(data);
 				}).catch(function (err) {
 					console.log('Fetch error: ', err);
 				});

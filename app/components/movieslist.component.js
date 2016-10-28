@@ -2,6 +2,7 @@ import React from 'react';
 
 let MoviesList = React.createClass({
 	render: function() {
+		console.log("props: ", this.props);
 		var movieItems = this.props.movies.results.map(function(movie, index) {
 			return (
 				<li key={index} className="movie">
