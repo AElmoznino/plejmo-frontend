@@ -21515,11 +21515,15 @@
 			value: function requestMovies() {
 				var _this2 = this;
 
-				fetch('../../movies.json').then(function (res) {
+				var myHeaders = new Headers();
+				myHeaders.append("Access-Control-Allow-Origin", "*");
+				var myInit = { headers: myHeaders };
+
+				fetch('../../movies.json', myInit).then(function (res) {
 					return res.json();
 				}).then(function (data) {
 					console.log('data: ', data);
-					_this2.setState(data);
+					_this2.setState({ results: data });
 				}).catch(function (err) {
 					console.log('Fetch error: ', err);
 				});
@@ -21529,8 +21533,21 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					null,
-					_react2.default.createElement(_movieslist2.default, { movies: this.state })
+					{ className: 'row' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'col-xs-10 col-xs-offset-1' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Popul\xE4rast Action'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'row' },
+							_react2.default.createElement(_movieslist2.default, { movies: this.state })
+						)
+					)
 				);
 			}
 		}]);
@@ -21560,14 +21577,53 @@
 		displayName: "MoviesList",
 
 		render: function render() {
-			var movieItems = this.props.movies.results.map(function (movie, index) {
+			console.log("props: ", this.props);
+			var movieItems = this.props.movies.results.map(function (movie) {
 				return _react2.default.createElement(
-					"li",
-					{ key: index, className: "movie" },
+					"div",
+					{ key: movie.id, className: "col-xs-6 col-md-3 movie" },
 					_react2.default.createElement(
-						"h4",
-						null,
-						movie.title
+						"a",
+						{ href: "https://www.plejmo.com/sv/film/$`{movie.id}`/$`{movie.title}`" },
+						_react2.default.createElement("img", { alt: "{movie.title}", src: movie.picture })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "movie-details" },
+						_react2.default.createElement(
+							"a",
+							{ href: "https://www.plejmo.com/sv/film/15584/deadpool" },
+							_react2.default.createElement(
+								"h4",
+								null,
+								movie.title
+							)
+						),
+						_react2.default.createElement(
+							"span",
+							null,
+							"Action"
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "movie-stars pull-right" },
+							_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+							_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+							_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+							_react2.default.createElement("i", { className: "fa fa-star", "aria-hidden": "true" }),
+							_react2.default.createElement("i", { className: "fa fa-star-half-empty", "aria-hidden": "true" })
+						)
+					),
+					_react2.default.createElement(
+						"span",
+						{ className: "movie-price" },
+						_react2.default.createElement(
+							"a",
+							{ href: "https://www.plejmo.com/sv/film/15584/deadpool" },
+							"Kolla ",
+							movie.price,
+							" kr"
+						)
 					)
 				);
 			});
@@ -21575,11 +21631,7 @@
 			return _react2.default.createElement(
 				"div",
 				null,
-				_react2.default.createElement(
-					"ul",
-					null,
-					movieItems
-				)
+				movieItems
 			);
 		}
 	});
