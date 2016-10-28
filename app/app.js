@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+require('../public/css/style.css');
+
 import MoviesContainer from './containers/movies.container';
 
 class App extends React.Component {
